@@ -1,0 +1,1486 @@
+kali@DESKTOP-DR6V550:~$ ls
+19031586cw2  lab2  NBA  shyam  subtest  summer
+kali@DESKTOP-DR6V550:~$ cat 19031586cw2
+Script started on 2021-04-01 09:56:05+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="83" LINES="43"]
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ mkdir -p NBA/{Lakers,Miami,"Chicago Bulls","Brooklyn nets","Dallas Mavervic"}
+/home/kali $ ls
+ 19031586cw2   casepractice   flower       ifcheck   select    testvar
+ c12           case.save      forloop      lab2      shyam     until1
+'c12 '         datapack       game         lxmn      sndp      while
+ case          extest1        hello        NBA       stop      whileloop
+ case1         extest2        hello.save   read1     subtest   whilemultiply
+ case1.save    filecheck      if           read2     summer
+/home/kali $ ls NBA
+'Brooklyn nets'  'Chicago Bulls'  'Dallas Mavervic'   Lakers   Miami
+/home/kali $ cd NBA/Miami/
+/home/kali/NBA/Miami $ touch file1 file2
+/home/kali/NBA/Miami $ ls
+file1  file2
+/home/kali/NBA/Miami $ cd ..
+/home/kali/NBA $ rm -ir Miami/
+rm: descend into directory 'Miami/'? yes
+rm: remove regular empty file 'Miami/file1'? yes
+rm: remove regular empty file 'Miami/file2'? yes
+rm: remove directory 'Miami/'? yes
+/home/kali/NBA $
+/home/kali/NBA $ ls
+'Brooklyn nets'  'Chicago Bulls'  'Dallas Mavervic'   Lakers
+/home/kali/NBA $ echo "Hello! I am big fan of NBA finals"
+Hello! I am big fan of NBA finals
+/home/kali/NBA $ echo "14<(2+2)"
+14<(2+2)
+/home/kali/NBA $ pwd
+/home/kali/NBA
+/home/kali/NBA $ cd Lakres
+bash: cd: Lakres: No such file or directory
+/home/kali/NBA $ cd Lakers
+/home/kali/NBA/Lakers $ pwd
+/home/kali/NBA/Lakers
+/home/kali/NBA/Lakers $ echo "i am in the lakers directory"
+i am in the lakers directory
+/home/kali/NBA/Lakers $ pwd;cd;pwd
+/home/kali/NBA/Lakers
+/home/kali
+/home/kali $ echo "pwd command is used to print the present working directory so that it print /home/kali/NBA/Lakers. and cd command is used to change the directory to home directory so pwd command print the current directory home/kali"
+pwd command is used to print the present working directory so that it print /home/kali/NBA/Lakers. and cd command is used to change the directory to home directory so pwd command print the current directory home/kali
+/home/kali $ pwd; cd ..; pwd; cd ..; pwd
+/home/kali
+/home
+/
+/ $ cd /home/kali
+/home/kali $ cd /NBA/Lakers
+bash: cd: /NBA/Lakers: No such file or directory
+/home/kali $ cd NBA/Lakers
+/home/kali/NBA/Lakers $ pwd; cd ..; pwd; cd ..; pwd
+/home/kali/NBA/Lakers
+/home/kali/NBA
+/home/kali
+/home/kali $ echo "pwd command print the present working directory (/home/kali/NBA/Lakers) and cd.. command is used to back to one previous directory which is (/home/kali/NBA) again pwd command is used to print this current directory and cd.. command is used again to back to one previous directory and pwd print this directory which is (/home/kali)"
+pwd command print the present working directory (/home/kali/NBA/Lakers) and cd.. command is used to back to one previous directory which is (/home/kali/NBA) again pwd command is used to print this current directory and cd.. command is used again to back to one previous directory and pwd print this directory which is (/home/kali)
+/home/kali $ cd; pwd
+/home/kali
+/home/kali $ echo -e "cd command change from the present directory to the home directory and pwd print the present working directory /n here I am in the home directory so nothing happen but pwd print the home directory that is /home/kali"
+cd command change from the present directory to the home directory and pwd print the present working directory /n here I am in the home directory so nothing happen but pwd print the home directory that is /home/kali
+/home/kali $ ls
+ 19031586cw2   casepractice   flower       ifcheck   select    testvar
+ c12           case.save      forloop      lab2      shyam     until1
+'c12 '         datapack       game         lxmn      sndp      while
+ case          extest1        hello        NBA       stop      whileloop
+ case1         extest2        hello.save   read1     subtest   whilemultiply
+ case1.save    filecheck      if           read2     summer
+/home/kali $ echo "ls command is used to list all the file and directory except hidden file and directory"
+ls command is used to list all the file and directory except hidden file and directory
+/home/kali $ ls -a
+ .              'c12 '          extest1     hello.save   .profile   subtest
+ ..              case           extest2     if           read1      summer
+ 19031586cw2     case1          filecheck   ifcheck      read2      testvar
+ .bash_history   case1.save     flower      lab2         select     until1
+ .bash_logout    casepractice   forloop     .local       shyam      while
+ .bashrc         case.save      game        lxmn         sndp       whileloop
+ c12             datapack       hello       NBA          stop       whilemultiply
+/home/kali $ echo "ls -a is used to list all the file and directory including hidden file and directory"
+ls -a is used to list all the file and directory including hidden file and directory
+/home/kali $ ls -al
+total 28
+drwxr-xr-x 1 kali kali 4096 Apr  1 09:56  .
+drwxr-xr-x 1 root root 4096 Jul 17  2020  ..
+-rw-r--r-- 1 kali kali 4096 Apr  1 10:07  19031586cw2
+-rw------- 1 kali kali 9721 Mar 31 21:43  .bash_history
+-rw-r--r-- 1 kali kali  220 Jul 17  2020  .bash_logout
+-rw-r--r-- 1 kali kali 3526 Jul 17  2020  .bashrc
+-rw-r--r-- 1 kali kali   24 Mar  1 19:06  c12
+-rw-r--r-- 1 kali kali   97 Feb 25 09:52 'c12 '
+-rw-r--r-- 1 kali kali  172 Mar 18 20:24  case
+-rw-r--r-- 1 kali kali  208 Mar 18 09:50  case1
+-rw------- 1 kali kali   42 Mar 18 10:39  case1.save
+-rw-r--r-- 1 kali kali  202 Mar 18 23:09  casepractice
+-rw-r--r-- 1 kali kali  149 Mar  2 19:46  case.save
+-rw-r--r-- 1 kali kali  322 Mar 18 10:33  datapack
+-rw-r--r-- 1 kali kali   89 Mar 18 20:13  extest1
+-rw-r--r-- 1 kali kali  105 Mar  4 10:11  extest2
+-rw-r--r-- 1 kali kali  123 Mar 25 10:23  filecheck
+-rw-r--r-- 1 kali kali  252 Mar 18 09:59  flower
+-rw-r--r-- 1 kali kali   55 Mar  9 18:44  forloop
+-rw-r--r-- 1 kali kali  234 Mar 18 20:20  game
+-rw-r--r-- 1 kali kali  176 Mar 18 09:37  hello
+-rw------- 1 kali kali    1 Mar 18 10:39  hello.save
+-rw-r--r-- 1 kali kali  139 Mar  2 23:33  if
+-rw-r--r-- 1 kali kali   28 Mar  2 18:58  ifcheck
+drwxrwxrwx 1 kali kali 4096 Jul 27  2020  lab2
+drwxr-xr-x 1 kali kali 4096 Feb 25 09:47  .local
+-rw-r--r-- 1 kali kali  176 Mar 18 09:30  lxmn
+drwxr-xr-x 1 kali kali 4096 Apr  1 10:00  NBA
+-rw-r--r-- 1 kali kali  807 Jul 17  2020  .profile
+-rw-r--r-- 1 kali kali   93 Mar  4 10:19  read1
+-rw-r--r-- 1 kali kali   93 Mar  4 10:13  read2
+-rw-r--r-- 1 kali kali  207 Mar  2 19:42  select
+drwxrwxrwx 1 kali kali 4096 Jul 17  2020  shyam
+-rw-r--r-- 1 kali kali  123 Feb 28 22:57  sndp
+-rw-r--r-- 1 kali kali  697 Mar 23 22:14  stop
+-rwxrwxrwx 1 kali kali   75 Mar  4 09:47  subtest
+drwxrwxrwx 1 kali kali 4096 Jul 27  2020  summer
+-rw-r--r-- 1 kali kali   31 Mar  4 09:32  testvar
+-rw-r--r-- 1 kali kali  174 Mar 25 09:42  until1
+-rw-r--r-- 1 kali kali   94 Mar 25 09:30  while
+-rw-r--r-- 1 kali kali   86 Mar  9 18:04  whileloop
+-rw-r--r-- 1 kali kali  245 Mar 25 10:11  whilemultiply
+/home/kali $ echo "ls -al is used to list all the file and directory including hidden file and directory in listing format which have many information like file name,modified date, owner, file size etc"
+ls -al is used to list all the file and directory including hidden file and directory in listing format which have many information like file name,modified date, owner, file size etc
+/home/kali $ cd; pwd; cd cw2; pwd
+/home/kali
+bash: cd: cw2: No such file or directory
+/home/kali
+/home/kali $ echo "cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home
+> directory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is c
+> ^C
+/home/kali $ echo -e"cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home
+> directory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cecho -e"cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so theredirectory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cw2echo -e"cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so thedirectory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cw2 directory pwd print /home/kali/cw2"
+-ecd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home
+directory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cw2 directory pwd print /home/kali/cw2
+/home/kali $ ls -R
+.:
+ 19031586cw2   casepractice   flower       ifcheck   select    testvar
+ c12           case.save      forloop      lab2      shyam     until1
+'c12 '         datapack       game         lxmn      sndp      while
+ case          extest1        hello        NBA       stop      whileloop
+ case1         extest2        hello.save   read1     subtest   whilemultiply
+ case1.save    filecheck      if           read2     summer
+
+./lab2:
+
+./NBA:
+'Brooklyn nets'  'Chicago Bulls'  'Dallas Mavervic'   Lakers
+
+'./NBA/Brooklyn nets':
+testX  testY  testZ
+
+'./NBA/Chicago Bulls':
+testResult  testX  testY  testZ
+
+'./NBA/Dallas Mavervic':
+
+./NBA/Lakers:
+
+./shyam:
+
+./summer:
+lab1
+echo "ls -R show all the directory and file in their specefic directroy"
+ls -R show all the directory and file in their specefic directroy"
+/home/kali $ cd NBA/"Chicago Bulls"
+/home/kali/NBA/Chicago Bulls $ cat > testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+^Z
+[1]+  Stopped                 cat > testX
+/home/kali/NBA/Chicago Bulls $ cat >testY
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+^Z
+[2]+  Stopped                 cat > testY
+/home/kali/NBA/Chicago Bulls $ cat > testZ
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+^Z
+[4]+  Stopped                 cat > testZ
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ cat testY
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ cat testZ
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ cp testX testY testZ  ../"Brooklyn nets"/
+/home/kali/NBA/Chicago Bulls $ cat testX testY testZ
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ cat testX testY testZ > testResult
+/home/kali/NBA/Chicago Bulls $ cat testResult
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ echo -e "It is correct because testResult show all the
+> content of testX, testY, testZ."
+It is correct because testResult show all the
+content of testX, testY, testZ.
+/home/kali/NBA/Chicago Bulls $ cat test[XYZ]
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+aaabb  Aaaaa
+AAAAA
+bbbcc  Bbbbb
+BBBBB
+ff–ff  Ccccc
+CCCCC
+cccdd  Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ echo "test[XYZ] is used to concatenate the file testX, testY and testZ so all the content of these files are in single form"
+test[XYZ] is used to concatenate the file testX, testY and testZ so all the content of these files are in single form
+/home/kali/NBA/Chicago Bulls $ ls -l
+total 0
+-rw-r--r-- 1 kali kali 236 Apr  1 10:19 testResult
+-rw------- 1 kali kali  80 Apr  1 10:16 testX
+-rw-r--r-- 1 kali kali  78 Apr  1 10:17 testY
+-rw-r--r-- 1 kali kali  78 Apr  1 10:18 testZ
+/home/kali/NBA/Chicago Bulls $ chmod -rwx testX
+/home/kali/NBA/Chicago Bulls $ ls -l testX
+---------- 1 kali kali 80 Apr  1 10:16 testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+cat: testX: Permission denied
+/home/kali/NBA/Chicago Bulls $ cat >> testX
+bash: testX: Permission denied
+/home/kali/NBA/Chicago Bulls $ chmod u+rw testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+/home/kali/NBA/Chicago Bulls $ cat >>testX
+this is the testX file
+^Z
+[5]+  Stopped                 cat >> testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+this is the testX file
+/home/kali/NBA/Chicago Bulls $ ls -l testX
+-rw------- 1 kali kali 103 Apr  1 10:22 testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+ccScript started on 2021-04-01 21:30:49+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ exit
+exit
+
+Script done on 2021-04-01 21:32:48+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-04-01 21:34:11+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="83" LINES="43"]
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ cd NBA/"Chicago Bulls"
+/home/kali/NBA/Chicago Bulls $ chmod -rwx testX
+/home/kali/NBA/Chicago Bulls $ ls -l testX
+---------- 1 kali kali 126 Apr  1 10:29 testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+cat: testX: Permission denied
+/home/kali/NBA/Chicago Bulls $ cat >> testX
+bash: testX: Permission denied
+/home/kali/NBA/Chicago Bulls $ chmod u+rw testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+this is the testX file
+this is the testX file
+/home/kali/NBA/Chicago Bulls $ cat >>testX
+This is the testX file^Z
+[1]+  Stopped                 cat >> testX
+/home/kali/NBA/Chicago Bulls $ cat testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+this is the testX file
+this is the testX file
+/home/kali/NBA/Chicago Bulls $ cd
+/home/kali $ cd NBA
+/home/kali/NBA $ ls -l
+total 0
+drwxr-xr-x 1 kali kali 4096 Mar 31 19:14 'Brooklyn nets'
+drwx------ 1 kali kali 4096 Apr  1 10:31 'Chicago Bulls'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37 'Dallas Mavervic'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37  Lakers
+/home/kali/NBA $ ls -l
+total 0
+drwxr-xr-x 1 kali kali 4096 Mar 31 19:14 'Brooklyn nets'
+drwx------ 1 kali kali 4096 Apr  1 10:31 'Chicago Bulls'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37 'Dallas Mavervic'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37  Lakers
+/home/kali/NBA $ chmod -rwx "Chicago Bulls"
+/home/kali/NBA $ ls -l
+total 0
+drwxr-xr-x 1 kali kali 4096 Mar 31 19:14 'Brooklyn nets'
+d--------- 1 kali kali 4096 Apr  1 10:31 'Chicago Bulls'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37 'Dallas Mavervic'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37  Lakers
+/home/kali/NBA $ cat "Chicago Bulls"/testX
+cat: 'Chicago Bulls/testX': Permission denied
+/home/kali/NBA $ cat >> "Chicago Bulls"/testX
+bash: Chicago Bulls/testX: Permission denied
+/home/kali/NBA $ cat > "Chicago Bulls"/file1
+bash: Chicago Bulls/file1: Permission denied
+/home/kali/NBA $ chmod u+rwx "Chicago Bulls"
+/home/kali/NBA $ ls -l
+total 0
+drwxr-xr-x 1 kali kali 4096 Mar 31 19:14 'Brooklyn nets'
+drwx------ 1 kali kali 4096 Apr  1 10:31 'Chicago Bulls'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37 'Dallas Mavervic'
+drwxr-xr-x 1 kali kali 4096 Mar 21 14:37  Lakers
+/home/kali/NBA $ cat "Chicago Bulls"/testX
+aaabb   Aaaaa
+AAAAA
+bbbccc  Bbbbb
+BBBBB
+ff-ff   Ccccc
+CCCCC
+cccdd   Ddddd
+DDDDD
+this is the testX file
+this is the testX file
+/home/kali/NBA $ cat > "Chicago Bulls"/file1
+This is the file
+^Z
+[2]+  Stopped                 cat > "Chicago Bulls"/file1
+/home/kali/NBA $ ls  "Chicago Bulls"/
+file1  testResult  testX  testY  testZ
+/home/kali/NBA $ cd
+/home/kali $ exit
+exit
+There are stopped jobs.
+/home/kali $ exit
+
+Script done on 2021-04-01 21:42:30+05:45 [COMMAND_EXIT_CODE="1"]
+Script started on 2021-04-01 22:00:03+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ cd NBA/"Brooklyn nets"/
+/home/kali/NBA/Brooklyn nets $ grep bb testX
+aaabb   Aaaaa
+bbbccc  Bbbbb
+echo "this command show the line containing bb from Brooklyn nets directory."   
+this command show the line containing bb from Brooklyn nets directory.                                                                                                       
+/home/kali/NBA/Brooklyn nets $ grep -v bb testX
+AAAAA
+BBBBB
+ff-ff   Ccccc
+CCCCC
+echo "this command display the line that do not contain (bb) in testX file."                                                  
+this command display the line that do not contain (bb) in testX file.
+/home/kali/NBA/Brooklyn nets $ grep -n bb testX
+1:aaabb   Aaaaa
+3:bbbccc  Bbbbb
+echo "It display the matched line and line number which contain (bb) in testX file."                                                                                                       
+It display the matched line and line number which contain (bb) in testX file.
+home/kali/NBA/Brfrom p -l bb *
+testX:aaabb   Aaaaaa
+testX:bbbccc  Bbbbb
+testX:BBBBB     
+testY:aaabb  Aaaaa
+testY:bbbcc  Bbbbb                                                         
+testY:BBBBB
+testZ:aaabb  Aaaaa
+echo "It ignore case sensitive and display the line which contains bb from Brooklyn nets directory."              
+It ignore case sensitive and display the line which contains bb from Brooklyn nets directory.
+/home/kali/NBA/Brooklyn nets $ grep -i BB *
+testX:aaabb   Aaaaaa
+testX:bbbccc  Bbbbb
+testX:BBBBB     
+testY:aaabb  Aaaaa
+testY:bbbcc  Bbbbb                                                         
+testY:BBBBB
+testZ:aaabb  Aaaaa
+echo "it ignore case sensetive and display lines that contains BB from Brooklyn nets directory."
+it ignore case sensetive and display lines that contains BB from Brooklyn nets directory.
+/home/kali/NBA/Brooklyn nets $ grep -c bb *
+testX:2                                             
+testY:2
+echo "it prints the number of (bb) from all lines of Brooklyn nets directory." 
+it prints the number of (bb) from all lines of Brooklyn nets directory.
+/home/kali/NBA/Brooklyn nets $ grep '^A' *
+testX:AAAAA
+testY:AAAAA
+echo "it display lines which is begin whith A from all the files in Brooklyn nets directory."
+it display lines which is begin whith A from all the files in Brooklyn nets directory.
+/home/kali/NBA/Brooklyn nets $ grep -n '^' testX
+1:aaabb   Aaaaa
+2:AAAAA
+3:bbbccc  Bbbbb
+4:BBBBB
+5:ff-ff   Ccccc
+6:CCCCC
+X file."  Ddddd 
+echo "it gives the line number for all lines in testX file."                                                                 
+it gives the line number for all lines in testX file.
+/home/kali/NBA/Brooklyn nets $ alias lsal="ls -al"
+/home/kali/NBA/Brooklyn nets $ alias lsa="ls -a"
+/home/kali/NBA/Brooklyn nets $ cd
+/home/kali $ lsal
+total 72
+drwxr-xr-x 1 kali kali  4096 Apr  1 14:32 .
+drwxr-xr-x 1 root root  4096 Jul 17  2020 ..
+-rw-r--r-- 1 kali kali 36862 Apr  1 22:13 19031586cw2
+-rw------- 1 kali kali 13378 Apr  1 21:44 .bash_history
+-rw-r--r-- 1 kali kali   220 Jul 17  2020 .bash_logout
+-rw-r--r-- 1 kali kali  3526 Jul 17  2020 .bashrc
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 lab2
+drwxr-xr-x 1 kali kali  4096 Feb 25 09:47 .local
+drwxr-xr-x 1 kali kali  4096 Apr  1 10:00 NBA
+-rw-r--r-- 1 kali kali   807 Jul 17  2020 .profile
+drwxrwxrwx 1 kali kali  4096 Apr  1 14:32 shyam
+-rwxrwxrwx 1 kali kali    75 Mar  4 09:47 subtest
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 summer
+/home/kali $ lsa
+.   19031586cw2    .bash_logout  lab2    NBA       shyam    summer
+..  .bash_history  .bashrc       .local  .profile  subtest
+/home/kali $ unalias lsal
+/home/kali $ unalias lsa
+/home/kali $ lsa
+bash: lsa: command not found
+/home/kali $ lsal
+bash: lsal: command not found
+/home/kali $ nano .bashrc
+/home/kali $ . .bashrc
+bash: alias: noAlif: not found
+bash: alias: =ls -a | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -aR | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -a | grep^[gtw] | wc -l: not found
+kali@DESKTOP-DR6V550:~$ lsal
+total 88
+drwxr-xr-x 1 kali kali  4096 Apr  1 22:43 .
+drwxr-xr-x 1 root root  4096 Jul 17  2020 ..
+-rw-r--r-- 1 kali kali 65534 Apr  1 22:44 19031586cw2
+-rw------- 1 kali kali 13378 Apr  1 21:44 .bash_history
+-rw-r--r-- 1 kali kali   220 Jul 17  2020 .bash_logout
+-rw-r--r-- 1 kali kali  3681 Apr  1 22:43 .bashrc
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 lab2
+drwxr-xr-x 1 kali kali  4096 Feb 25 09:47 .local
+drwxr-xr-x 1 kali kali  4096 Apr  1 10:00 NBA
+-rw-r--r-- 1 kali kali   807 Jul 17  2020 .profile
+drwxrwxrwx 1 kali kali  4096 Apr  1 14:32 shyam
+-rwxrwxrwx 1 kali kali    75 Mar  4 09:47 subtest
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 summer
+kali@DESKTOP-DR6V550:~$ unalias lsal
+kali@DESKTOP-DR6V550:~$ nano .bashrc
+kali@DESKTOP-DR6V550:~$ exit
+exit
+
+Script done on 2021-04-01 22:46:04+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-04-01 22:46:15+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="168" LINES="44"]
+bash: alias: noAlif: not found
+bash: alias: =ls -a | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -aR | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -a | grep^[gtw] | wc -l: not found
+kali@DESKTOP-DR6V550:~$ lsal
+total 104
+drwxr-xr-x 1 kali kali  4096 Apr  1 22:44 .
+drwxr-xr-x 1 root root  4096 Jul 17  2020 ..
+-rw-r--r-- 1 kali kali 78015 Apr  1 22:46 19031586cw2
+-rw------- 1 kali kali 14441 Apr  1 22:46 .bash_history
+-rw-r--r-- 1 kali kali   220 Jul 17  2020 .bash_logout
+-rw-r--r-- 1 kali kali  3681 Apr  1 22:43 .bashrc
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 lab2
+drwxr-xr-x 1 kali kali  4096 Feb 25 09:47 .local
+drwxr-xr-x 1 kali kali  4096 Apr  1 10:00 NBA
+-rw-r--r-- 1 kali kali   807 Jul 17  2020 .profile
+drwxrwxrwx 1 kali kali  4096 Apr  1 14:32 shyam
+-rwxrwxrwx 1 kali kali    75 Mar  4 09:47 subtest
+drwxrwxrwx 1 kali kali  4096 Jul 27  2020 summer
+kali@DESKTOP-DR6V550:~$ exit
+exit
+
+Script done on 2021-04-01 22:47:03+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-04-01 22:48:21+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="168" LINES="44"]
+bash: alias: noAlif: not found
+bash: alias: =ls -a | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -aR | wc -l: not found
+bash: alias: noAlif: not found
+bash: alias: =ls -a | grep^[gtw] | wc -l: not found
+kali@DESKTOP-DR6V550:~$ nano .bashrc
+kali@DESKTOP-DR6V550:~$ . .bashrc
+kali@DESKTOP-DR6V550:~$ exit
+exit
+
+Script done on 2021-04-01 22:58:17+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-04-01 22:59:41+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="168" LINES="44"]
+kali@DESKTOP-DR6V550:~$ noAllf
+bash: noAllf: command not found
+kali@DESKTOP-DR6V550:~$ . .bashrc
+kali@DESKTOP-DR6V550:~$ noAllf
+bash: noAllf: command not found
+kali@DESKTOP-DR6V550:~$ lsa
+.   19031586cw2    .bash_logout  lab2    NBA       shyam    summer
+..  .bash_history  .bashrc       .local  .profile  subtest
+kali@DESKTOP-DR6V550:~$ lsal
+total 124
+drwxr-xr-x 1 kali kali   4096 Apr  1 22:57 .
+drwxr-xr-x 1 root root   4096 Jul 17  2020 ..
+-rw-r--r-- 1 kali kali 100061 Apr  1 22:58 19031586cw2
+-rw------- 1 kali kali  14479 Apr  1 22:58 .bash_history
+-rw-r--r-- 1 kali kali    220 Jul 17  2020 .bash_logout
+-rw-r--r-- 1 kali kali   3670 Apr  1 22:57 .bashrc
+drwxrwxrwx 1 kali kali   4096 Jul 27  2020 lab2
+drwxr-xr-x 1 kali kali   4096 Feb 25 09:47 .local
+drwxr-xr-x 1 kali kali   4096 Apr  1 10:00 NBA
+-rw-r--r-- 1 kali kali    807 Jul 17  2020 .profile
+drwxrwxrwx 1 kali kali   4096 Apr  1 14:32 shyam
+-rwxrwxrwx 1 kali kali     75 Mar  4 09:47 subtest
+drwxrwxrwx 1 kali kali   4096 Jul 27  2020 summer
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ noAlif
+12
+/home/kali $ noAsubsir
+bash: noAsubsir: command not found
+/home/kali $ noAcs
+bash: noAcs: command not found
+/home/kali $ exit
+exit
+
+Script done on 2021-04-01 23:09:06+05:45 [COMMAND_EXIT_CODE="127"]
+Script started on 2021-04-01 23:10:20+05:45 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="83" LINES="44"]
+kali@DESKTOP-DR6V550:~$ export PS1="\`pwd\` $ "
+/home/kali $ noAlif
+13
+/home/kali $ noAsubsir
+106
+/home/kali $ noAcs
+12
+/home/kali $ history
+    1  mkdir sandip
+    2  ls
+    3  pwd
+    4  ls
+    5  cd sandip
+    6  ls
+    7  pwd
+    8  mkdir shyam
+    9  ls
+   10  cd shyam
+   11  ls
+   12  cd
+   13  cd sandip/shyam
+   14  cd ..
+   15  cd shyam
+   16  touch lab
+   17  ls
+   18  cat> lab
+   19  cat lab
+   20  rmdir shyam
+   21  rmdir lab
+   22  rm lab
+   23  rmdir shyam
+   24  cd ..
+   25  rmdir shyam
+   26  touch lab
+   27  ls
+   28  rm sandip
+   29  cd ..
+   30  rmdir sandip
+   31  rmdir lab
+   32  cd sandip
+   33  rmdir lab
+   34  rm lab
+   35  cd
+   36  rmdir sandip
+   37  ls
+   38  clear
+   39  mkdir shyam
+   40  ls
+   41  rm shyam
+   42  cd shyam
+   43  li
+   44  mkdir summer
+   45  pwd
+   46  cd summer
+   47  pwd
+   48  mkdir lab1
+   49  ls
+   50  cd lab1
+   51  cd ..
+   52  cd lab1
+   53  cd
+   54  mkdir lab2
+   55  ls
+   56  pwd
+   57  cd lab2
+   58  ls
+   59  rmdir shyam
+   60  rmdir lab2
+   61  ls
+   62  pwd
+   63  figlet sandip
+   64  figlet hello
+   65  mkdir
+   66  #!/bin/bash
+   67  nano c12
+   68  bash c12
+   69  bash 12
+   70  bash c12
+   71  enter your name :
+   72  #!/bin/bash
+   73  nano c12
+   74  bash c12
+   75  echo "enter your name:"
+   76  read
+   77  nano c12
+   78  bash c12
+   79  nano c12
+   80  nano sum
+   81  nano c12
+   82  nano add
+   83  bash c12
+   84  nano c12
+   85  bash c12
+   86  nano c12
+   87  bash c12
+   88  nano c12
+   89  ksh c12
+   90  ksh switch c12
+   91  nano c12
+   92  ksh switch 1 2
+   93  sudo apt-get install ksh
+   94  conn kali
+   95  #!/bin/bash
+   96  echo"Enter your first number"
+   97  #!/bin/bash
+   98  nano_practice
+   99  #!/bin/bash
+  100  nano
+  101  nano_practice
+  102  echo practice
+  103  nano practice
+  104  ./practice
+  105  echo
+  106  nano
+  107  echo practice
+  108  nano
+  109  cat practice
+  110  bash practice
+  111  nano
+  112  bash sndp
+  113  nano
+  114  cd sndp
+  115  cd c12
+  116  cd practice
+  117  mk dir practice
+  118  mkdir practice
+  119  rm practice
+  120  mkdir practice
+  121  cd practice
+  122  #!/bin/bash
+  123  echo"enter your first number"
+  124  rm dir practice
+  125  cd ..
+  126  rm dir practice
+  127  rmdir practice
+  128  bash c12
+  129  nano c12
+  130  bash c12
+  131  PWD
+  132  pwd
+  133  sudo apt-get update
+  134  nano
+  135  bash ifcheck
+  136  cat> ifcheck
+  137  cat>if
+  138  bash if
+  139  nano if
+  140  bash if
+  141  nano if
+  142  bash if
+  143  clear
+  144  nano if
+  145  bash if
+  146  nano if
+  147  bash if
+  148  nano
+  149  nano if
+  150  bash if
+  151  nano if
+  152  bash if
+  153  nano if
+  154  y
+  155  cat>case
+  156  nano case
+  157  bash case
+  158  nano case
+  159  bash case
+  160  nano case
+  161  bash case
+  162  nano select
+  163  bash select
+  164  7
+  165  ls
+  166  bash ifcheck
+  167  nano if
+  168  bash if
+  169  nano if
+  170  bash if
+  171  nano if
+  172  bash if
+  173  nano case
+  174  bash case
+  175  nano case
+  176  bash case
+  177  nano case
+  178  y
+  179  ls
+  180  bash select
+  181  nano select
+  182  bash select
+  183  ls
+  184  bash select
+  185  nano select
+  186  nano testvar
+  187  bash testvar
+  188  nano testvar
+  189  bash testvar
+  190  nano testvar
+  191  bash testvar
+  192  nano testvar
+  193  bash testvar
+  194  nano testvar
+  195  bash select
+  196  nano select
+  197  nano testvar
+  198  bash testvar
+  199  nano testvar
+  200  bash testvar
+  201  nano extest1
+  202  bash extest1
+  203  nano extest1
+  204  nano subtest
+  205  bash subtest
+  206  nano extest1
+  207  bash subtest
+  208  nano extest1
+  209  bash subtest
+  210  nano extest1
+  211  nano subtest
+  212  bash subtest
+  213  bash extest1
+  214  chmod 777 subtest
+  215  bash extest1
+  216  nano subtest
+  217  nano extest1
+  218  bash extest1
+  219  nano extest2
+  220  bash extest2
+  221  nano extest2
+  222  bash extest2
+  223  nano extest2
+  224  nano subtest
+  225  nano read1
+  226  nano read2
+  227  bash read1
+  228  bash read2
+  229  nano extest2
+  230  bash extest2
+  231  bash read1
+  232  nano read2
+  233  nano read1
+  234  bash read1
+  235  bash read2
+  236  nano read1
+  237  bash read1
+  238  nano read1
+  239  bash read1
+  240  nano read1
+  241  bash read1
+  242  nano read2
+  243  nano read1
+  244  bash read1
+  245  nano read1
+  246  bash read1
+  247  nano read1
+  248  bash read1
+  249  ls
+  250  #!/bin/bash
+  251  nano whileloop
+  252  bash whileloop
+  253  nano whileloop
+  254  bash whileloop
+  255  nano whileloop
+  256  bash whileloop
+  257  2
+  258  nano whileloop
+  259  bash whileloop
+  260  nano whileloop
+  261  bash whileloop
+  262  nano whileloop
+  263  bash whileloop
+  264  nano whileloop
+  265  bash whileloop
+  266  nano whileloop
+  267  bash whileloop
+  268  nano whileloop
+  269  nano whilemultiply
+  270  bash whilemultiply
+  271  \
+  272  nano whilemultiply
+  273  bash whilemultiply
+  274  nano whilemultiply
+  275  bash whilemultiply
+  276  nano forloop
+  277  bash forloop
+  278  nano forloop
+  279  bash forloop
+  280  nano forloop
+  281  bash forloop
+  282  ls
+  283  nano lxmn
+  284  bash lxmn
+  285  nano lxmn
+  286  bash lxmn
+  287  nano lxmn
+  288  bash lxmn
+  289  nano lxmn
+  290  bash lxmn
+  291  nano lxmn
+  292  nano hello
+  293  bash hello
+  294  nano hello
+  295  bash hello
+  296  nano hello
+  297  bash hello
+  298  nano hello
+  299  bash hello
+  300  nano hello
+  301  bash hello
+  302  nano hello
+  303  bash hello
+  304  nano hello
+  305  bash hello shyam
+  306  bash hello shyam santosh
+  307  nano hello
+  308  nano case1
+  309  bash case1
+  310  nano case1
+  311  bash case1
+  312  nano case1
+  313  bash case1
+  314  nano case1
+  315  nano select
+  316  nano flower
+  317  bash flower
+  318  nano flower
+  319  bash select
+  320  nano flower
+  321  pwd
+  322  nano flower
+  323  sudo apt-get update
+  324  sudo get-install figlet
+  325  sudo apt-get install figlet
+  326  sudo apt-get install toilet
+  327  figlet sandip
+  328  toilet shyam
+  329  sl
+  330  sudo apt-get install sl
+  331  sl
+  332  nano datapack
+  333  bash datapack
+  334  nano datapack
+  335  bash datapack
+  336  nano datapack
+  337  bash datapack
+  338  nano datapack
+  339  bash datapack
+  340  bash datapack
+  341  clear
+  342  bash datapack
+  343  ls
+  344  nano extest1
+  345  nano flower
+  346  nano game
+  347  bash game
+  348  nano game
+  349  bash game
+  350  nano game
+  351  bash game
+  352  nano game
+  353  bash game
+  354  ls
+  355  pwd
+  356  clear
+  357  ls
+  358  nano case
+  359  bash case
+  360  nano case
+  361  bash case 2
+  362  nano case
+  363  bash case c2
+  364  nano case
+  365  bash case c8
+  366  nano case
+  367  ls
+  368  nano case1.save
+  369  nano datapack
+  370  nano case1
+  371  nano casepractice
+  372  bash casepractice
+  373  nano casepractice
+  374  bash casepractice
+  375  nano casepractice
+  376  bash casepractice
+  377  ls
+  378  cd game
+  379  nano game
+  380  bash game
+  381  nano casepractice
+  382  nanao whileloop
+  383  nano whileloop
+  384  uname
+  385  uname-a
+  386  uname -a
+  387  export PS1="\`pwd\` $ "
+  388  mkdir -p NBA/{Lakers,Miami,"Chicago Bulls","Brooklyn nets","Dallas Mavervic"}
+  389  ls
+  390  ls NBA
+  391  cd NBA/Miami/
+  392  touch file1 file2
+  393  ls
+  394  cd ..
+  395  rm -ir Miami/
+  396  ls
+  397  echo "Hello! I am big fan of NBA finals"
+  398  echo 14<(2+2)
+  399  echo "14<(2+2)"
+  400  pwd
+  401  cd Lakers
+  402  pwd; cd; pwd
+  403  cd pwd
+  404  cd Lakers
+  405  cd Lakers/
+  406  cd NBA/Leakers
+  407  cd NBA
+  408  ls
+  409  cd
+  410  cd NBA
+  411  cd Leakers
+  412  cd Lakers
+  413  pwd; cd ..; pwd; cd ..; pwd
+  414  cd; pwd
+  415  ls
+  416  ls-a
+  417  ls -a
+  418  ls -al
+  419  cd; pwd; cd cw2; pwd
+  420  cd; pwd; cd 19031586cw2; pwd
+  421  script 19031586cw2
+  422  cd 19031586cw2
+  423  bash 19031586cw2
+  424  ls
+  425  cd NBA
+  426  ls
+  427  rm 19031586cw2
+  428  rm script 19031586cw2
+  429  rm 19031586cw2
+  430  ls
+  431  CAT NBA
+  432  cat NBA
+  433  cat/NBA
+  434  ls NBA
+  435  script stop
+  436  stop
+  437  stop script
+  438  stop stop
+  439  rm 19031586cw2
+  440  rmscript 19031586cw2
+  441  rm script 19031586cw2
+  442  script stop
+  443  export PS1="\`pwd\` $ "
+  444  mkdir -p NBA/{Lakers,Miami,"Chicago Bulls","Brooklyn nets","Dallas Mavervic"}
+  445  ls
+  446  ls NBA
+  447  cd NBA/Miami/
+  448  touch file1 file2
+  449  ls
+  450  cd ..
+  451  rm -ir Miami/
+  452  ls
+  453  echo "Hello! I am big fan of NBA finals"
+  454  echo 14<(2+2)
+  455  echo "14<(2+2)"
+  456  pwd
+  457  cd Lakers
+  458  stop
+  459  script 19031586cw2
+  460  bash flower
+  461  ls
+  462  nano if
+  463  nano whileloop
+  464  nano while
+  465  bash while
+  466  nano while
+  467  bash while
+  468  nano while
+  469  bash while
+  470  nano while
+  471  bash while
+  472  nano while
+  473  bash while
+  474  nano while
+  475  nano until1
+  476  bash until1
+  477  nano until1
+  478  bash until1
+  479  nano until1
+  480  bash until1
+  481  nano until1
+  482  nano while
+  483  ls
+  484  bash whilemultiply
+  485  nano whilemultiply
+  486  bash whilemultiply
+  487  nano whilemultiply
+  488  bash whilemultiply
+  489  nano whilemultiply
+  490  bash whilemultiply
+  491  nano whilemultiply
+  492  bash whilemultiply
+  493  nano whilemultiply
+  494  bash whilemultiply
+  495  nano whilemultiply
+  496  bash whilemultiply
+  497  nano whilemultiply
+  498  bash whilemultiply
+  499  nano whilemultiply
+  500  bash whilemultiply
+  501  nano whilemultiply
+  502  bash whilemultiply
+  503  nano whilemultiply
+  504  bash whilemultiply
+  505  nano whilemultiply
+  506  bash whilemultiply
+  507  nano whilemultiply
+  508  bash whilemultiply
+  509  nano whilemultiply
+  510  ls
+  511  nano filecheck
+  512  bash filecheck
+  513  bash lab2
+  514  bash NBA
+  515  nano filecheck
+  516  bash check shyam
+  517  nano filecheck
+  518  ls
+  519  cat NBA
+  520  pwd
+  521  cd/home/kali
+  522  cd NBA/Lakers
+  523  pwd; cd ..; pwd; cd ..; pwd
+  524  echo "pwd command print the current working directory(/home/kali/NBA/Lakers). cd.. command is used to back to one previous directory and pwd print the current directory(/home/kali/NBA)and again cd.. command is used to back to one previous directory and pwd print this current directory(/home/kali)."
+  525  cd; pwd
+  526  echo "cd command change from the present directory to home directory and pwd is used to print thr present working directory. we are already in home directory so pwd command print(/home/kali)."
+  527  ls
+  528  echo "ls command is used to list all the files and directory ec=xcept hidden file and directoryin the present directory."
+  529  cd home
+  530  cd
+  531  cd/home/kali
+  532  pwd
+  533  ls -a
+  534  echo "ls -a is used to list all the files and directory including hidden file and directory from the present directory"
+  535  ls -al
+  536  echo "ls -al is used to show the file and directory in list format including hidden file and directory which have more information of the file and directory like file name, size, last modified date, owoner etc."
+  537  export PS1="\`pwd\` $ "
+  538  mkdir -p NBA/{Lakers,Miami,"Chicago Bulls","Brooklyn nets","Dallas Mavervic"}
+  539  ls
+  540  ls NBA
+  541  cd NBA/Miami/
+  542  touch file1 file2
+  543  ls
+  544  cd..
+  545  cd ..
+  546  rm -ir Miami/
+  547  ls
+  548  echo "Hello! I am big fan of NBA finals"
+  549  echo "14<(2+2)"
+  550  pwd
+  551  cd Lakres
+  552  cd Lakers
+  553  pwd
+  554  echo "i am in the lakers directory"
+  555  pwd;cd;pwd
+  556  echo "pwd command is used to print the present working directory so that it print /home/kali/NBA/Lakers. and cd command is used to change the directory to home directory so pwd command print the current directory home/kali."
+  557  pwd; cd ..; pwd; cd ..; pwd
+  558  cd/home/kali
+  559  cd /home/kali
+  560  cd /NBA/Lakers
+  561  cd NBA/Lakers
+  562  pwd; cd ..; pwd; cd ..; pwd
+  563  echo "pwd command print the present working directory (/home/kali/NBA/Lakers) and cd.. command is used to back to one previous directory which is (/home/kali/NBA) again pwd command is used to print this current directory and cd.. command is used again to back to one previous directory and pwd print this directory which is (/home/kali)."
+  564  ls
+  565  echo "ls command is used to list all the file and directory except hidden file and directory."
+  566  ls -a
+  567  echo "ls -a is used to list all the file and directory including hidden file and directory."
+  568  ls -al
+  569  echo "ls -al is used to list all the file and directory including hidden file and directory in listing format which have many information like file name,modified date, owner, file size etc."
+  570  cd; pwd; cd cw2; pwd
+  571  echo "cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home directory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cw2 directory pwd print /home/kali/cw2"
+  572  ls -R
+  573  echo "ls -R show all the directory and file in their specefic directroy."
+  574  exit
+  575  remove cw2 19031586
+  576  rm cw2 19031586
+  577  rm 19031586cw2
+  578  script 19031586cw2
+  579  cat 19031586cw2
+  580  export PS1="\`pwd\` $ "
+  581  cd NBA/"chicago Bulls"
+  582  cd NBA/"Chicago Bulls"
+  583  cat > testX
+  584  cat >testY
+  585  cat > testZ
+  586  rm testZ
+  587  cat > testZ
+  588  cat testX
+  589  cat testY
+  590  cat testZ
+  591  cp testX testY testZ  ../"Brooklyn nets"/
+  592  cat testX testY testZ
+  593  cat testX testY testZ > testResult
+  594  cat testResult
+  595  echo "It is correct because testResult show all the content of testX, testY, testZ."
+  596  cat test[XYZ]
+  597  echo "test[XYZ] is used to concatenate the file testX, testY and testZ so all the content of these files are in single form."
+  598  ls -l
+  599  chmod -rwx testX
+  600  ls -l testX
+  601  cat testX
+  602  cat >> testX
+  603  chmod u+rw testX
+  604  cat testX
+  605  cat >>testX
+  606  cat testX
+  607  ls -l testX
+  608  cat testX
+  609  exit
+  610  cat 19031586cw2
+  611  exit
+  612  export PS1="\`pwd\` $ "
+  613  cd
+  614  exit
+  615  cat 19031586cw2
+  616  ls
+  617  cat 19031586cw2
+  618  ls
+  619  cat 19031586cw2
+  620  export PS1="\`pwd\` $ "
+  621  mkdir -p NBA/{Lakers,Miami,"Chicago Bulls","Brooklyn nets","Dallas Mavervic"}
+  622  ls
+  623  ls NBA
+  624  cd NBA/Miami/
+  625  touch file1 file2
+  626  ls
+  627  cd ..
+  628  rm -ir Miami/
+  629  ls
+  630  echo "Hello! I am big fan of NBA finals"
+  631  echo "14<(2+2)"
+  632  pwd
+  633  cd Lakres
+  634  cd Lakers
+  635  pwd
+  636  echo "i am in the lakers directory"
+  637  pwd;cd;pwd
+  638  echo "pwd command is used to print the present working directory so that it print /home/kali/NBA/Lakers. and cd command is used to change the directory to home directory so pwd command print the current directory home/kali"
+  639  pwd; cd ..; pwd; cd ..; pwd
+  640  cd /home/kali
+  641  cd /NBA/Lakers
+  642  cd NBA/Lakers
+  643  pwd; cd ..; pwd; cd ..; pwd
+  644  echo "pwd command print the present working directory (/home/kali/NBA/Lakers) and cd.. command is used to back to one previous directory which is (/home/kali/NBA) again pwd command is used to print this current directory and cd.. command is used again to back to one previous directory and pwd print this directory which is (/home/kali)"
+  645  ls
+  646  echo "ls command is used to list all the file and directory except hidden file and directory"
+  647  ls -a
+  648  echo "ls -a is used to list all the file and directory including hidden file and directory"
+  649  ls -al
+  650  echo "ls -al is used to list all the file and directory including hidden file and directory in listing format which have many information like file name,modified date, owner, file size etc"
+  651  cd; pwd; cd cw2; pwd
+  652  echo "cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home
+  653  echo -e"cd change from present directory to the home directory that is /home/kali \n so that pwd print /home/kali so there is no any cw2 directory in home
+  654  directory so there is an error message showing no such file or directory. Agian pwd print the /home/kali if there is cw2 directory pwd print /home/kali/cw2"
+  655  ls -R
+  656  echo -e "ls -R show all the directory and file in their specefic directroy"
+  657  cd NBA/"Chicago Bulls"
+  658  cat > testX
+  659  cat >testY
+  660  cat > testZ
+  661  rm testZ
+  662  cat > testZ
+  663  cat testX
+  664  cat testY
+  665  cat testZ
+  666  cp testX testY testZ  ../"Brooklyn nets"/
+  667  cat testX testY testZ
+  668  cat testX testY testZ > testResult
+  669  cat testResult
+  670  echo -e "It is correct because testResult show all the
+  671  content of testX, testY, testZ."
+  672  cat test[XYZ]
+  673  echo "test[XYZ] is used to concatenate the file testX, testY and testZ so all the content of these files are in single form"
+  674  ls -l
+  675  chmod -rwx testX
+  676  ls -l testX
+  677  cat testX
+  678  cat >> testX
+  679  chmod u+rw testX
+  680  cat testX
+  681  cat >>testX
+  682  cat testX
+  683  ls -l testX
+  684  cat testX
+  685  cat >>testX
+  686  cd
+  687  cd NBA
+  688  ls -l
+  689  chmod -rwx "Chicago Bulls"
+  690  ls -l
+  691  cat "Chicago Bulls"/testX
+  692  cat >> "Chicago Bulls"/testX
+  693  cat > "Chicago Bulls"/file1
+  694  ls  "Chicago Bulls"/
+  695  chmod u+rwx "Chicago Bulls"
+  696  ls -l
+  697  cat "Chicago Bulls"/testX
+  698  cat > "Chicago Bulls"/file1
+  699  ls  "Chicago Bulls"/
+  700  exit
+  701  cd
+  702  ls
+  703  ls
+  704  rm 19031586cw2
+  705  ls
+  706  script 19031586cw2
+  707  ls
+  708  cat 19031586cw2
+  709  exit
+  710  cat 19031586cw2
+  711  ls
+  712  users
+  713  user
+  714  mv case1 datapack flower hello.save lxmn select while c12 case1.save extest1 forloop if shyam/
+  715  ls
+  716  mv casepractice filecheck ifcheck read1 sndp whileloop 'c12 ' case.save game read2 stop testvar whilemultiply case extest2 hello until1 shyam/
+  717  ls
+  718  exit
+  719  export PS1="\`pwd\` $ "
+  720  exit
+  721  export PS1="\`pwd\` $ "
+  722  cd NBA/"Chicago Bulls"
+  723  chmod -rwx testX
+  724  ls -l testX
+  725  cat testX
+  726  cat >> testX
+  727  chmod u+rw testX
+  728  cat testX
+  729  cat >>testX
+  730  cat testX
+  731  cd
+  732  cd NBA
+  733  ls -l
+  734  chmod -rwx "Chicago Bulls"
+  735  ls -l
+  736  cat "Chicago Bulls"/testX
+  737  cat >> "Chicago Bulls"/testX
+  738  cat > "Chicago Bulls"/file1
+  739  chmod u+rwx "Chicago Bulls"
+  740  ls -l
+  741  cat "Chicago Bulls"/testX
+  742  cat > "Chicago Bulls"/file1
+  743  ls  "Chicago Bulls"/
+  744  cd
+  745  exit
+  746  ls
+  747  script -a 19031586cw2
+  748  cat 19031586cw2
+  749  script -a 19031586cw2
+  750  cat 19031586cw2
+  751  cat 19031586cw2
+  752  export PS1="\`pwd\` $ "
+  753  cd NBA/"Brooklyn nets"/
+  754  grep bb testX
+  755  echo "This command search the line which contains bb word in testX file"
+  756  grep -v bb testX
+  757  echo "this command display the line that do not contain (bb) in testX file."
+  758  grep -n bb testX
+  759  echo "It display the matched line and line number which contain (bb) in testX file."
+  760  grep -l bb *
+  761  echo "this command display all the file of Brooklyn nets which cointains (bb)."
+  762  grep -i bb *
+  763  echo "It ignore case sensetive and display the line which contains bb from Brooklyn nets directory."
+  764  grep -i BB *
+  765  echo "it ignore case sensetive and display lines that contains BB from Brooklyn nets directory."
+  766  grep -c bb *
+  767  echo "it prints the number of (bb) from all lines of Brooklyn nets directory."
+  768  grep '^A' *
+  769  echo "it display lines which is begin whith A from all the files in Brooklyn nets directory."
+  770  grep -n '^' testX
+  771  echo "it gives the line number for all lines in testX file."
+  772  alias lsal="ls -al"
+  773  alias lsa="ls -a"
+  774  cd
+  775  lsal
+  776  lsa
+  777  unalias lsal
+  778  unalias lsa
+  779  lsa
+  780  nano .bashrc
+  781  . .bashrc
+  782  lsal
+  783  unalias lsal
+  784  nano .bashrc
+  785  exit
+  786  lsal
+  787  exit
+  788  nano .bashrc
+  789  . .bashrc
+  790  exit
+  791  noAllf
+  792  . .bashrc
+  793  noAllf
+  794  lsa
+  795  lsal
+  796  export PS1="\`pwd\` $ "
+  797  noAlif
+  798  noAsubsir
+  799  noAcs
+  800  exit  
+/home/kali $!-8
+noAsubsir
+106
+/home/kali $ fc -e- m
+mv casepractice filecheck ifcheck read1 sndp whileloop 'c12 ' case.save game read2 stop testvar whilemultiply case extest2 hello until1 shyam/
+mv: cannot stat 'casepractice': No such file or directory
+mv: cannot stat 'filecheck': No such file or directory
+mv: cannot stat 'ifcheck': No such file or directory
+mv: cannot stat 'read1': No such file or directory
+mv: cannot stat 'sndp': No such file or directory
+mv: cannot stat 'whileloop': No such file or directory
+mv: cannot stat 'c12 ': No such file or directory
+mv: cannot stat 'case.save': No such file or directory
+mv: cannot stat 'game': No such file or directory
+mv: cannot stat 'read2': No such file or directory
+mv: cannot stat 'stop': No such file or directory
+mv: cannot stat 'testvar': No such file or directory
+mv: cannot stat 'whilemultiply': No such file or directory
+mv: cannot stat 'case': No such file or directory
+mv: cannot stat 'extest2': No such file or directory
+mv: cannot stat 'hello': No such file or directory
+mv: cannot stat 'until1': No such file or directory
+/home/kali $ exit
+exit
+
+Script done on 2021-04-01 23:20:56+05:45 [COMMAND_EXIT_CODE="1"]
+kali@DESKTOP-DR6V550:~$

@@ -1,0 +1,128 @@
+#!bin/bash
+if [ $# = 2 ]
+then
+echo -e "Enter the program name: \c"
+read program
+else
+echo "please input two parameters where first name as 1 and ID number as 2"
+exit
+fi
+password=123
+counter=1
+while [ $counter -le  5 ]
+do
+echo "Enter the secret key: "
+read pass
+if [ $password = $pass ]
+then
+echo "==================================================================================="
+figlet welcome to $program
+echo "==================================================================================="
+echo " YOUR FIRST NAME IS $1 AND ID IS $2"
+echo "date and time of execution"
+date
+repeat= true
+while $repeat
+do
+
+
+echo "COUNTRY AND THEIR COUNTRY CODE."
+echo "=============================="
+echo "|Country       |       Code  |"
+echo "=============================="
+echo "|Brazil        |       BRZ   |"
+echo "------------------------------"
+echo "|Argentina     |       ARG   |"
+echo "------------------------------"
+echo "|Nepal         |       NEP   |"
+echo "------------------------------"
+echo "|China         |       CHI   |"
+echo "------------------------------"
+echo "|England       |       ENG   |"
+echo "------------------------------"
+
+
+echo "=========================================================================="
+echo "Please Enter the country code."
+read guess
+until [ $guess = NEP ]
+do
+if [ $guess = BRZ ]
+then
+echo "Your guess is not correct."
+elif [ $guess = ARG ]
+then
+echo "your guess is not correct."
+elif [ $guess = CHI ]
+then
+echo "your guess is not correct."
+elif [ $guess = ENG ]
+then
+echo "your guess is not correct."
+else
+echo "Plese enter from following country code: NPL, BRZ, ARG, CHI, ENG."
+fi
+echo "Enter the country code AGAIN."
+read guess
+done
+echo "Nepal wins three nation championship  so your guess is correct."
+
+
+echo "-----------------------------------"
+echo "|  Player         |     Code      |"
+echo "==================================="
+echo "|Lionel messi     |     LM        |"
+echo "==================================="
+echo "|Nemar Junior     |     NJ        |"
+echo "==================================="
+echo "==================================="
+echo "|Kiran Chemjong   |     KC        |"
+echo "==================================="
+echo "==================================="
+echo "|Zheng Zhi        |     ZZ        |"
+echo "==================================="
+echo "==================================="
+echo "|Harry kane       |     HK        |"
+echo "==================================="
+
+players=(" LM NJ KC ZZ HK ")
+echo -e "Please enter three player code: \c "
+read a b c
+until [[ ${#c} = 2 && "${players[@]}" =~ "${a}" && "${players[@]}" =~ "${b}" && "${players[@]}" =~ "${c}"  &&
+"$a" =~ [A-Z] && "$b" =~ [A-Z] && "$c" =~ [A-Z] &&
+$a != $b &&  $a != $c && $b != $a && $b != $c && $c != $a && $c != $b ]]
+do
+echo "Enter the player code."
+echo "EXAMPLE: LM NJ KC "
+echo -e "Select three player again."
+read a b c
+done
+echo "You select the correct option"
+PS3="list of three player that you have choose."
+select footballer in $a $b $c
+do
+if [ -z $footballer ]
+then
+echo "your selection is out of option."
+elif [[ -f "$footballer" ]]
+then
+cat $footballer
+break
+else
+echo "File not found."
+break
+fi
+done
+echo -e "please enter yes to continue: \c"
+read yes
+if [ $yes == yes ]
+then
+echo "you are in step 4."
+else
+exit
+fi
+done
+else
+((counter++))
+fi
+done
